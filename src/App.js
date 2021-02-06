@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+// import LifeCycle from "./My Componenets/LearningLifeCycle";
+// import LifeCycleTwo from "./My Componenets/LearningLifeCycle2";
+import LifeCycleThree from "./My Componenets/LearningLifeCycle3";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// App Component...!
+class App extends Component {
+  render() {
+    return (
+      <React.Fragment>
+        {/* <LifeCycle favCol="Blue" /> */}
+        {/* <LifeCycleTwo updateName="Ahmed" /> */}
+        <LifeCycleThree />
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
